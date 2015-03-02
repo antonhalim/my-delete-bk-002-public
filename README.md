@@ -10,6 +10,9 @@ resources: 1
 
 You'll be building three methods: 1) delete_first, 2) delete_last, and 3) delete_middle. Each of these methods will be within the Array class and they'll all take one argument, the element to delete.
 
+### NOTE
+You will be returning a new copy of the array, not mutating the original one.
+
 ## Examples
 
 ```ruby
