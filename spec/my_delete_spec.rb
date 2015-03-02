@@ -3,7 +3,7 @@ describe "My Delete Methods" do
   # activists
   let(:activists) { ["Rosa Parks", "Harriet Tubman", "Joan Baez", "Amal Clooney", "Ruby Dee"] }
   let(:no_harriet_tubman) { ["Rosa Parks", "Joan Baez", "Amal Clooney", "Ruby Dee"] }
-  
+
   # birds
   let(:birds) { ["crow", "owls", "dove", "duck", "dove", "hawk", "dove", "gulls", "owls", "wrens", "owls"] }
   # owls
@@ -90,13 +90,13 @@ describe "My Delete Methods" do
 
     it "deletes the middle dove" do
       expect(birds.delete_middle("dove")).to eq(no_middle_dove)
-    end 
+    end
 
     it "deletes one element if there is only one that matches the argument" do
       expect(activists.delete_middle("Harriet Tubman")).to eq(no_harriet_tubman)
     end
 
-    it "deletes the two middle elements if there are an even number" do   
+    it "deletes the two middle elements if there are an even number" do
       nums = [1,0,2,0,3,4,5,0,6,7,8,0,9]
       expect(nums.delete_middle(0)).to eq([1,0,2,3,4,5,6,7,8,0,9])
       letters = ["a", "x", "b", "x", "c", "x", "d", "x", "e", "x", "f", "x"]
